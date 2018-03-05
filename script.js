@@ -14,7 +14,6 @@ function createAddToDo(toDoItem) {
   toDoList.appendChild(toDo);
 }
 
-
 var form = document.getElementsByTagName("form")[0];
 
 form.addEventListener("submit", function(event) {
@@ -41,5 +40,3 @@ function toDoMarkedDone(event) {
     target.add("done");
   }
 }
-
-
