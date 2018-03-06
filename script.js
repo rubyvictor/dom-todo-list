@@ -20,6 +20,7 @@ form.addEventListener("submit", function(event) {
   event.preventDefault();
   var userInput = document.querySelector("input").value;
   createAddToDo(userInput);
+  tasks.push(userInput);
 });
 
 form.addEventListener("keypress", function(event) {
@@ -27,6 +28,7 @@ form.addEventListener("keypress", function(event) {
     event.preventDefault();
     var userInput = document.querySelector("input").value;
     createAddToDo(userInput);
+    tasks.push(userInput);
   } else {
     console.log("You clicked and added to-do item");
   }
